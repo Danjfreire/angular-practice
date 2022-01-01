@@ -1,0 +1,22 @@
+<nav class="navigation">
+  <button class="icon-btn" (click)="toggleSidebar()">
+    <i class="icon fas fa-bars"></i>
+  </button>
+</nav>
+
+<div class="layout">
+  <div class="sidebar" [@toggleSidebar]="isOpen ? 'sidebar-expanded' : 'sidebar-retracted'"></div>
+  
+  <div class="content">
+    
+    <div class="case">
+      <h1>Fly In/Out</h1>
+      <button (click)="toggleFlyComponent()">Toggle</button>
+
+      <div class="case-content">
+        <ng-flyin @flyTrigger *ngIf="isShown"></ng-flyin>
+      </div>
+    </div>
+
+  </div>
+</div>
