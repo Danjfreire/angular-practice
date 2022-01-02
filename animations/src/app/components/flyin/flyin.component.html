@@ -1,15 +1,17 @@
-<h1>Fly In/Out - Enter/Leave</h1>
-<button (click)="toggleFlyComponent()">Toggle</button>
-
-<div class="container">    
-    <div @flyTrigger *ngIf="isShown" class="card-body">
-        <div class="card-header">
-        </div>
-        <div class="card-description">
-            <span class="fake-text-header"></span>
-            <span class="fake-text"></span>
-            <span class="fake-text"></span>
-            <span class="fake-text"></span>
+<div class="component">
+    <h1>Fly In/Out - Enter/Leave</h1>
+    <button (click)="toggleFlyComponent()">Toggle</button>
+    
+    <div class="container">    
+        <div @flyTrigger *ngIf="isShown" class="card-body">
+            <div class="card-header">
+            </div>
+            <div class="card-description">
+                <span class="fake-text-header"></span>
+                <span class="fake-text"></span>
+                <span class="fake-text"></span>
+                <span class="fake-text"></span>
+            </div>
         </div>
     </div>
 </div>

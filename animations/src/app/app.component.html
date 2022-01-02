@@ -1,26 +1,30 @@
-<nav class="navigation">
-  <button class="icon-btn" (click)="toggleSidebar()">
-    <i class="icon fas fa-bars"></i>
-  </button>
-</nav>
 
 <div class="layout">
-  <div
-    class="sidebar"
-    [@toggleSidebar]="isOpen ? 'sidebar-expanded' : 'sidebar-retracted'"
-  ></div>
+  <nav class="navigation">
+    <button class="icon-btn" (click)="toggleSidebar()">
+      <i class="icon fas fa-bars"></i>
+    </button>
+  </nav>
 
-  <div class="content">
-    <div class="case">
-      <ng-flyin></ng-flyin>
+  <div class="layout-body">
+    <div
+      class="sidebar"
+      [@toggleSidebar]="isOpen ? 'sidebar-expanded' : 'sidebar-retracted'"
+    ></div>
+
+    <div class="content">
+      <div class="case">
+        <ng-flyin></ng-flyin>
+      </div>
+  
+      <div class="case">
+        <ng-keyframe></ng-keyframe>
+      </div>
+  
+      <div class="case">
+        <ng-sequence></ng-sequence>
+      </div>
     </div>
 
-    <div class="case">
-      <ng-keyframe></ng-keyframe>
-    </div>
-
-    <div class="case">
-      <ng-sequence></ng-sequence>
-    </div>
   </div>
 </div>

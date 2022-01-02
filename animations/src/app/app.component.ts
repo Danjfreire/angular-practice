@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
       state(
         'sidebar-expanded',
         style({
-          width: '250px',
+          width: '280px',
           height: '100%',
           backgroundColor: 'coral',
         })
