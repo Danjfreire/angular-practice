@@ -5,17 +5,22 @@
 </nav>
 
 <div class="layout">
-  <div class="sidebar" [@toggleSidebar]="isOpen ? 'sidebar-expanded' : 'sidebar-retracted'"></div>
-  
+  <div
+    class="sidebar"
+    [@toggleSidebar]="isOpen ? 'sidebar-expanded' : 'sidebar-retracted'"
+  ></div>
+
   <div class="content">
-    
     <div class="case">
-        <ng-flyin></ng-flyin>
+      <ng-flyin></ng-flyin>
     </div>
 
     <div class="case">
       <ng-keyframe></ng-keyframe>
     </div>
 
+    <div class="case">
+      <ng-sequence></ng-sequence>
+    </div>
   </div>
 </div>

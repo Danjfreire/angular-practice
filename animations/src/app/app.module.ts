@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlyinComponent } from './components/flyin/flyin.component';
 import { KeyframeComponent } from './components/keyframe/keyframe.component';
+import { SequenceComponent } from './components/sequence/sequence.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FlyinComponent,
-    KeyframeComponent
+    KeyframeComponent,
+    SequenceComponent
   ],
   imports: [
     BrowserModule,
