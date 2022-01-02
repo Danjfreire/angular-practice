@@ -10,12 +10,11 @@
   <div class="content">
     
     <div class="case">
-      <h1>Fly In/Out</h1>
-      <button (click)="toggleFlyComponent()">Toggle</button>
+        <ng-flyin></ng-flyin>
+    </div>
 
-      <div class="case-content">
-        <ng-flyin @flyTrigger *ngIf="isShown"></ng-flyin>
-      </div>
+    <div class="case">
+      <ng-keyframe></ng-keyframe>
     </div>
 
   </div>

@@ -31,26 +31,12 @@ import { Component } from '@angular/core';
       ),
       transition('sidebar-expanded <=> sidebar-retracted', [animate('0.2s')]),
     ]),
-    trigger('flyTrigger', [
-      transition(':enter', [
-        style({ transform: 'translateX(-50%)' }),
-        animate(150),
-      ]),
-      transition(':leave', [
-        animate(150, style({ transform: 'translateX(50%)' })),
-      ]),
-    ]),
   ],
 })
 export class AppComponent {
   isOpen = true;
-  isShown = false;
 
   toggleSidebar() {
     this.isOpen = !this.isOpen;
-  }
-
-  toggleFlyComponent() {
-    this.isShown = !this.isShown;
   }
 }

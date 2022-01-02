@@ -5,11 +5,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlyinComponent } from './components/flyin/flyin.component';
+import { KeyframeComponent } from './components/keyframe/keyframe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FlyinComponent
+    FlyinComponent,
+    KeyframeComponent
   ],
   imports: [
     BrowserModule,
