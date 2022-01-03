@@ -1,34 +1,23 @@
 
-<div class="layout">
-  <nav class="navigation">
-    <button class="icon-btn" (click)="toggleSidebar()">
-      <i class="icon fas fa-bars"></i>
-    </button>
-  </nav>
-
-  <div class="layout-body">
-    <div
+  <div class="layout">
+    <nav class="navigation">
+      <button class="icon-btn" (click)="toggleSidebar()">
+        <i class="icon fas fa-bars"></i>
+      </button>
+      <button class="route-btn" routerLink="home">Home</button>
+      <button class="route-btn" routerLink="test">Test</button>
+    </nav>
+    
+    <div class="layout-body">
+      <div
       class="sidebar"
       [@toggleSidebar]="isOpen ? 'sidebar-expanded' : 'sidebar-retracted'"
-    ></div>
-
-    <div class="content">
-      <div class="case">
-        <ng-flyin></ng-flyin>
+      ></div>
+      
+      <div [@routerAnimations]="prepareRoute(outlet)" class="content">
+        <router-outlet #outlet="outlet"></router-outlet>
       </div>
-  
-      <div class="case">
-        <ng-keyframe></ng-keyframe>
-      </div>
-  
-      <div class="case">
-        <ng-sequence></ng-sequence>
-      </div>
-
-      <div class="case">
-        <ng-parallel></ng-parallel>
-      </div>
+      
     </div>
-
   </div>
-</div>
+  

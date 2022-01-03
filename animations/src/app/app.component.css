@@ -14,6 +14,16 @@
     align-items: center;
 }
 
+.route-btn {
+    height: 60px;
+    width: 100px;
+    padding: 0px 15px;
+    background-color: transparent;
+}
+.route-btn:hover {
+    background-color: rgb(1, 104, 104);
+}
+
 .layout-body {
     display: flex;
     flex-direction: row;
@@ -27,9 +37,6 @@
     flex: 1;
     height: 100%;
     padding: 25px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    flex-wrap: wrap;
 }
 
 button {
@@ -53,12 +60,3 @@ button {
     color: white;
 }
 
-.case {
-    display: flex;
-    width: 515px;
-    height: 515px;
-    border: 1px solid rgba(0, 0, 0, 0.397);
-    border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
-}

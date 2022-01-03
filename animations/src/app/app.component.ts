@@ -6,12 +6,15 @@ import {
   transition,
 } from '@angular/animations';
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { slideInAnimation } from './shared/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [
+    slideInAnimation,
     trigger('toggleSidebar', [
       state(
         'sidebar-expanded',
@@ -38,5 +41,9 @@ export class AppComponent {
 
   toggleSidebar() {
     this.isOpen = !this.isOpen;
+  }
+
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet?.activatedRouteData?.['animation'];
   }
 }
