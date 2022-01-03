@@ -1,0 +1,14 @@
+.item {
+    border: 1px solid black;
+    height: 60px;
+    margin-bottom: 20px;
+    background-color: green;
+}
+
+.container {
+    flex-direction: column;
+    margin-top: 20px;
+    display: flex;
+    width: 480px;
+    justify-content: center;
+}

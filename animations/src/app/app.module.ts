@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { FlyinComponent } from './components/flyin/flyin.component';
 import { KeyframeComponent } from './components/keyframe/keyframe.component';
 import { SequenceComponent } from './components/sequence/sequence.component';
+import { ParallelComponent } from './components/parallel/parallel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FlyinComponent,
     KeyframeComponent,
-    SequenceComponent
+    SequenceComponent,
+    ParallelComponent
   ],
   imports: [
     BrowserModule,
