@@ -1,0 +1,12 @@
+<div class="board">
+  <div class="board-row" *ngFor="let row of board; index as i">
+    <div class="cell"
+      *ngFor="let btn of board[i]; index as j"
+      (click)="revealCell(i, j)"
+      (contextmenu)="flagCell($event, i, j)"
+      [ngStyle]="{ backgroundColor: btn.isRevealed ? (btn.isBomb ? 'red' : 'lightgrey') : '' }"
+    >{{btn.isRevealed ? btn.bombsAround : ''}}</div>
+  </div>
+</div>
+
+<button *ngIf="gameOver" class="restart-btn" (click)="restartGame()">Restart</button>

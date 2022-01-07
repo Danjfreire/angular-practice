@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.board-row {
+    display: flex;
+    height: 34px;
+}
+
+.cell {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    border-radius: 0px;
+    cursor: pointer;
+    background-color: grey;
+    padding: 0px;
+    line-height: 10px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.restart-btn {
+    background-color: coral;
+    width: 100px;
+    border-radius: 5px;
+}
